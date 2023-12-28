@@ -36,10 +36,13 @@ h1 {
     font-weight: 800;
     margin-top: 2.5vw;
     font-size: 3vw;
+    margin-bottom: 0;
+    animation: fade-in 1s linear;
 }
 
 #globe {
     transition: all 0.2s ease-in-out;
+    animation: fade-in 1s linear;
 }
 
 #globe-button {
@@ -66,4 +69,17 @@ h1 {
 
 #nav-item:hover path{
     fill: white;
+}
+
+@keyframes fade-in {
+    from {opacity: 0%;};
+    to {opacity: 100%;};
+}
+
+p {
+    font-family: var(--root-font);
+    font-weight: 200;
+    color: white;
+    margin-top: 1vw;
+    animation: fade-in 1s linear;
 }
